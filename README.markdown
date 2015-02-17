@@ -1,8 +1,7 @@
 # buf2tabdiff.vim
 
-Function and some shell scripts for getting Vim to work as a Git or
-Subversion diff tool for looking a current changes within your working
-copy.
+Function and some shell scripts for getting Vim to work as a Subversion
+diff tool for looking a the current changes within your working copy.
 
 ## Installation
 
@@ -16,7 +15,10 @@ git clone https://github.com/jpitblado/vim-buf2tabdiff.git
 ```
 
 Then just add ~/.vim.bundle/vim-buf2tabdiff/bin to your favorite shell's
-path.
+path.  The shell scripts are
+
+	svngvim	-- use gVim
+	svnvim	-- use Vim
 
 ## License
 
