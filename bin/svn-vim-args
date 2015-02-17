@@ -1,0 +1,7 @@
+#!/bin/sh
+# svn-vimdiff-args
+# When used as part of 'svn diff --diff-cmd=...', prints out the name of the
+# base version '$6' and the modified file '$7'.
+# This is a utility script for -svnvimdiff-. 
+
+echo "--diff $6 $7"
