@@ -21,6 +21,6 @@ EOF
 	exit 1
 fi
 
-set -x
+svn info $* > /dev/null || exit 1
 
 vim -c 'silent call buf2tabdiff#now()' $(svn diff --diff-cmd=svn-vim-args $* | grep "[-][-]diff" | sed -e 's/[-][-]diff//')
